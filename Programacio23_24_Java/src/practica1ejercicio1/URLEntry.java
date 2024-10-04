@@ -5,6 +5,7 @@ import java.util.Date;
 
 /**
  * Class that contains an URLEntry
+ * @author Guillermo Bernal y Miguel Reyna
  */
 public class URLEntry {
 
@@ -36,7 +37,6 @@ public class URLEntry {
         this.shortURL = shortURL;
         this.longURL = longURL;
     }
-
     /**
      * Creates a URLEntry with expiration date
      *
@@ -48,5 +48,16 @@ public class URLEntry {
         this.shortURL = shortURL;
         this.longURL = longURL;
         this.expirationTimestamp = expirationTimestamp;
+    }
+    public URL getShortURL() {
+        return shortURL;
+    }
+
+    public URL getLongURL() {
+        return longURL;
+    }
+
+    public Date getExpirationTimestamp() {
+        return expirationTimestamp;
     }
 }

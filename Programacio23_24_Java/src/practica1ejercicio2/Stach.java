@@ -1,6 +1,5 @@
 package src.practica1ejercicio2;
-
-/*
+/**
  * Esta clase contiene los métodos para la creación
  * de una pila (LIFO).
  * @author Guillermo Bernal y Miguel Reyna
@@ -35,13 +34,10 @@ public class Stach<T> {
      * de la pila
      * @param n nodo a anadir
      */
-    public void push(SimpleNode<T> n){
-        if(last != null){
-            n.setNext(last);
-            setLast(n);
-        }else{
-            setLast(n);
-        } size++;
+    public void push(SimpleNode<T> n) {
+        n.setNext(last);
+        setLast(n);
+        size++;
     }
 
     /**
@@ -49,12 +45,11 @@ public class Stach<T> {
      * anadido de la pila y lo devuelve
      * @return el nodo retirado
      */
-    public SimpleNode<T> pop(){
+    public SimpleNode<T> pop() {
+        if (isEmpty()) return null;
         SimpleNode<T> p = last;
-        if(p != null) {
-            setLast(last.getNext());
-            size--;
-        }
+        setLast(last.getNext());
+        size--;
         return p;
     }
     /**

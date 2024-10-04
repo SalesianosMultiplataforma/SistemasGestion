@@ -1,5 +1,6 @@
-package src.practica1ejercicio2;
-/**
+package src.practica1ejercicio1;
+
+/*
  * Esta clase contiene los métodos para la creación
  * de una una DobleLinkedList.
  * @author Guillermo Bernal y Miguel Reyna

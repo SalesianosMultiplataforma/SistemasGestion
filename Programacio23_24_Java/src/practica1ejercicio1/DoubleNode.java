@@ -1,8 +1,9 @@
-package src.practica1ejercicio2;
-/**
+package src.practica1ejercicio1;
+
+/*
  * Esta clase contiene los métodos para la creación
  * de un nodo para una DobleLinkedList.
- * @author Guillermo Bernal Lou y Miguel Reyna
+ * @author Guillermo Bernal y Miguel Reyna
  */
 public class DoubleNode<T> {
     private T content;

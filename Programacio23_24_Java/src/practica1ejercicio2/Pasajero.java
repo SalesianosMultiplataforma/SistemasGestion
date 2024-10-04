@@ -1,5 +1,5 @@
 package src.practica1ejercicio2;
-/*
+/**
  * Esta clase representa un pasajero
  * de un aeropuerto, conteniendo su DNI,
  * nombre y avion

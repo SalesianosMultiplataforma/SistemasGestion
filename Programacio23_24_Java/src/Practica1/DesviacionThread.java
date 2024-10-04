@@ -18,7 +18,8 @@ public class DesviacionThread extends Thread{
         for (int num : numbers) {
             sum += num;
         }
-        double media = sum / numbers.length;
+        // Para evitar el redondeo nos aseguramos de hacer la division en coma flotante
+        double media = (double) sum / numbers.length;
 
         // Calcular la desviación típica
         double sumDesviacion = 0;

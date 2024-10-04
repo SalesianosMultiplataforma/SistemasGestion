@@ -16,6 +16,7 @@ public class Main2 {
         Random random = new Random();
         Thread[] t = new Thread2[NUM_THREADS];
         for(int i = 0; i < NUM_THREADS; i++){
+            //retardo e iteraciones aleatorias
             int retardo = random.nextInt(201) + 100;
             int veces = random.nextInt(11) + 5;
             t[i] = new Thread2("Soy " + (i + 1), retardo, veces);

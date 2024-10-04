@@ -1,6 +1,5 @@
 package src.practica1ejercicio2;
-
-/*
+/**
  * Esta clase contiene los métodos para la creación
  * de una cola (FIFO).
  * @author Guillermo Bernal y Miguel Reyna
@@ -43,14 +42,14 @@ public class Queue<T> {
      * de la cola
      * @param n nodo a anadir
      */
-    public void push(SimpleNode<T> n){
-        if(first != null){
+    public void push(SimpleNode<T> n) {
+        if (first != null) {
             last.setNext(n);
-            setLast(n);
-        }else{
+        } else {
             setFirst(n);
-            setLast(n);
-        } size++;
+        }
+        setLast(n);
+        size++;
     }
 
     /**
@@ -58,12 +57,14 @@ public class Queue<T> {
      * anadido de la cola y lo devuelve
      * @return el nodo retirado
      */
-    public SimpleNode<T> pop(){
+    public SimpleNode<T> pop() {
+        if (isEmpty()) return null;
         SimpleNode<T> p = first;
-        if(p != null) {
-            setFirst(first.getNext());
-            size--;
+        setFirst(first.getNext());
+        if (first == null) {
+            last = null;
         }
+        size--;
         return p;
     }
     /**

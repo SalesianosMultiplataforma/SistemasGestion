@@ -9,7 +9,7 @@ package src.practica1ejercicio2;
  */
 public class Avion extends DoubleNode{
     private String identificador;
-    private final int capacidad = 300;
+    //private final int capacidad = 300; //Capacidad máxima del avión
     SimpleLinkedList<Pasajero> pasajeros = new SimpleLinkedList<>();
     public Avion(String identificador){
         this.identificador = identificador;

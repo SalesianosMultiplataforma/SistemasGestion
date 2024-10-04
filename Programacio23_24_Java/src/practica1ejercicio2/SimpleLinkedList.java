@@ -1,5 +1,4 @@
 package src.practica1ejercicio2;
-
 /*
 * Esta clase contiene los métodos para la creación
 * de una lista enlazada simple.
